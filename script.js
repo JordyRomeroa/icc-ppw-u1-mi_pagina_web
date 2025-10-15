@@ -13,6 +13,3 @@ titulo.addEventListener("mouseover", () => {
 titulo.addEventListener("mouseout", () => {
   titulo.style.color = "white";
 });
-
-
-alert("¡Bienvenido a mi página de Práctica Web!");
