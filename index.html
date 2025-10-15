@@ -3,61 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explorando los Estándares Web</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <title>Mi primera página con estándares web</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
 
+    header {
+      background-color: #0056d2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0056d2;
+      border-bottom: 2px solid #0056d2;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    button {
+      background-color: #0056d2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #003f9e;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 100px;
+    }
+
+    progress {
+      width: 100%;
+      height: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #002b7a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
 <body>
   <header>
-    <h1 id="titulo">Explorando los Estándares Web</h1>
-    <h2>HTML5, CSS y JavaScript</h2>
+    Mi primera página con estándares web
   </header>
 
-  <section>
-    <h2>Tabla de Elementos HTML</h2>
-    <table id="tabla-elementos">
-      <thead>
+  <main>
+    <section>
+      <h2>Tabla de elementos HTML</h2>
+      <p>A continuación se muestra una tabla creada con etiquetas HTML5.</p>
+
+      <table id="tablaElementos">
         <tr>
           <th>Elemento</th>
           <th>Descripción</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
           <td>&lt;header&gt;</td>
-          <td>Encabezado principal de la página o sección.</td>
+          <td>Encabezado principal del documento</td>
         </tr>
         <tr>
           <td>&lt;section&gt;</td>
-          <td>Define una sección de contenido.</td>
+          <td>Define una sección temática en la página</td>
         </tr>
-      </tbody>
-    </table>
-    <button id="agregar-fila">Agregar fila</button>
-  </section>
+        <tr>
+          <td>&lt;footer&gt;</td>
+          <td>Pie de página con información del autor</td>
+        </tr>
+      </table>
 
-  <section>
-    <h2>Etiquetas Nuevas Descubiertas</h2>
+      <button onclick="agregarFila()">Agregar fila</button>
+    </section>
 
-    <article>
-      <h3>1. &lt;figure&gt; y &lt;figcaption&gt;</h3>
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Example.svg" alt="Ejemplo de imagen HTML5" class="imagen">
-        <figcaption>Etiqueta &lt;figure&gt; con descripción &lt;figcaption&gt;</figcaption>
-      </figure>
-    </article>
+    <section>
+      <h2>Etiquetas nuevas exploradas</h2>
+      <p>Estas son dos etiquetas que aprendí de la tabla periódica HTML5.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML5">
+      <p style="text-align:center;">Logo representativo del lenguaje HTML5</p>
 
-    <article>
-      <h3>2. &lt;mark&gt;</h3>
-      <p>La etiqueta <mark>&lt;mark&gt;</mark> resalta <mark>texto importante</mark> dentro del contenido.</p>
-    </article>
-  </section>
+      <p>Barra de progreso que representa un 70% completado:</p>
+      <progress value="70" max="100"></progress>
+    </section>
+  </main>
 
   <footer>
-    <p>Elaborado por: <strong>Jordy Romero</strong></p>
-    <p>Asignatura: Programación para la Web</p>
+    Desarrollado por <strong>[Tu Nombre]</strong> – Programación y Plataformas Web
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function agregarFila() {
+      const tabla = document.getElementById("tablaElementos");
+      const fila = tabla.insertRow();
+      const celda1 = fila.insertCell(0);
+      const celda2 = fila.insertCell(1);
+      celda1.textContent = "<article>";
+      celda2.textContent = "Define contenido independiente dentro de una página.";
+    }
+  </script>
 </body>
 </html>
