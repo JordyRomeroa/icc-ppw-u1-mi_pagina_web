@@ -6,7 +6,7 @@
 
 ---
 
-## 🧱 Estructura del proyecto
+## Estructura del proyecto
 El proyecto incluye:
 
 - `<!DOCTYPE html>`, `<html lang="es">`, `<head>`, `<body>`  
@@ -26,7 +26,7 @@ icc-ppw-u1-mi_pagina_web/
 
 ---
 
-## 🎨 Estilos CSS aplicados
+## Estilos CSS aplicados
 | Elemento | Propiedades obligatorias | Propiedades exploradas |
 |----------|------------------------|----------------------|
 | body | background-color, font-family, margin | — |
@@ -40,20 +40,20 @@ icc-ppw-u1-mi_pagina_web/
 
 ---
 
-## ⚡ Interactividad JS
+## Interactividad JS
 - Agregar fila dinámica a la tabla con botón  
 - Cambiar color del título al pasar el mouse  
 - Mostrar mensaje de bienvenida al cargar la página  
 
 ---
 
-## 🆕 Etiquetas nuevas exploradas
+## Etiquetas nuevas exploradas
 - `<figure>` / `<figcaption>` → Imagen con descripción  
 - `<mark>` → Resalta texto importante  
 
 ---
 
-## 📸 Capturas de pantalla sugeridas
+## Capturas de pantalla sugeridas
 1. **Versión HTML básica:** sin estilos ni JS aplicados  
 2. **Versión con CSS:** resaltar colores, botones, tabla y barra de progreso  
 3. **Versión con JS:** agregar fila dinámica y efecto de hover en título  
