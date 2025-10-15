@@ -1,0 +1,74 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #0044cc;
+  padding-bottom: 5px;
+  text-transform: uppercase; /* NUEVA propiedad explorada */
+}
+
+/* Secciones */
+section {
+  margin: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #eaeaea;
+}
+
+/* Botón */
+button {
+  background-color: #0044cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease; /* NUEVA propiedad explorada */
+}
+
+button:hover {
+  background-color: #002b80;
+}
+
+/* Imagen */
+.imagen {
+  width: 150px;
+  filter: sepia(30%);
+}
+
+/* Pie de página */
+footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
