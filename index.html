@@ -1,154 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera página con estándares web</title>
-  <style>
-    /* Estilos generales */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-
-    header {
-      background-color: #0056d2;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 1.8em;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #0056d2;
-      border-bottom: 2px solid #0056d2;
-      padding-bottom: 5px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f0f0f0;
-    }
-
-    button {
-      background-color: #0056d2;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background-color: #003f9e;
-    }
-
-    img {
-      display: block;
-      margin: 20px auto;
-      width: 100px;
-    }
-
-    progress {
-      width: 100%;
-      height: 20px;
-      margin-top: 10px;
-    }
-
-    footer {
-      background-color: #002b7a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    Mi primera página con estándares web
-  </header>
+    <header>
+        <h1 id="titulo">Mi primera página con estándares web</h1>
+        <h2>Unidad 1.2 – Estándares Web</h2>
+    </header>
 
-  <main>
-    <section>
-      <h2>Tabla de elementos HTML</h2>
-      <p>A continuación se muestra una tabla creada con etiquetas HTML5.</p>
+    <main>
+        <section>
+            <h2>Tabla de elementos HTML</h2>
+            <p>A continuación se muestra una tabla creada con etiquetas HTML5.</p>
 
-      <table id="tablaElementos">
-        <tr>
-          <th>Elemento</th>
-          <th>Descripción</th>
-        </tr>
-        <tr>
-          <td>&lt;header&gt;</td>
-          <td>Encabezado principal del documento</td>
-        </tr>
-        <tr>
-          <td>&lt;section&gt;</td>
-          <td>Define una sección temática en la página</td>
-        </tr>
-        <tr>
-          <td>&lt;footer&gt;</td>
-          <td>Pie de página con información del autor</td>
-        </tr>
-      </table>
+            <table>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Encabezado principal del documento</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Define una sección temática en la página</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Pie de página con información del autor</td>
+                </tr>
+            </table>
 
-      <button onclick="agregarFila()">Agregar fila</button>
-    </section>
+            <button id="agregarFila">Agregar fila</button>
+        </section>
 
-    <section>
-      <h2>Etiquetas nuevas exploradas</h2>
-      <p>Estas son dos etiquetas que aprendí de la tabla periódica HTML5.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML5">
-      <p style="text-align:center;">Logo representativo del lenguaje HTML5</p>
+        <section>
+            <h2>Etiquetas nuevas exploradas</h2>
+            <p>Estas son dos etiquetas que aprendí de la tabla periódica HTML5.</p>
 
-      <p>Barra de progreso que representa un 70% completado:</p>
-      <progress value="70" max="100"></progress>
-    </section>
-  </main>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                     alt="Logo HTML5"
+                     width="100">
+                <figcaption>Logo representativo del lenguaje HTML5</figcaption>
+            </figure>
 
-  <footer>
-    Desarrollado por <strong>[Jordy Romero]</strong> – Programación y Plataformas Web
-  </footer>
+            <p>Barra de progreso que representa un 70% completado:</p>
+            <progress value="70" max="100">70%</progress>
+        </section>
+    </main>
 
-  <script>
-    function agregarFila() {
-      const tabla = document.getElementById("tablaElementos");
-      const fila = tabla.insertRow();
-      const celda1 = fila.insertCell(0);
-      const celda2 = fila.insertCell(1);
-      celda1.textContent = "<article>";
-      celda2.textContent = "Define contenido independiente dentro de una página.";
-    }
-  </script>
+    <footer>
+        <p>Desarrollado por <strong>Jordy Romero</strong> – Programación y Plataformas Web</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
