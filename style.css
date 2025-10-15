@@ -1,37 +1,51 @@
+
 body {
-  background-color: #f4f4f4;
-  font-family: Arial, sans-serif;
+  background-color: #f2f5f7;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-/* Encabezado */
+
 header {
-  background-color: #0044cc;
+  background-color: #0056d6;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-h2 {
-  color: #333;
-  border-bottom: 2px solid #0044cc;
-  padding-bottom: 5px;
-  text-transform: uppercase; /* NUEVA propiedad explorada */
+header h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-/* Secciones */
+header h2 {
+  margin-top: 10px;
+  font-weight: normal;
+  color: #e6e6e6;
+}
+
+
 section {
-  margin: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   background-color: white;
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Tabla */
+section h2 {
+  color: #0044cc;
+  border-bottom: 2px solid #0044cc;
+  padding-bottom: 8px;
+}
+
+
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 10px;
 }
 
 th, td {
@@ -41,34 +55,58 @@ th, td {
 }
 
 th {
-  background-color: #eaeaea;
+  background-color: #f0f0f0;
 }
 
-/* Botón */
 button {
-  background-color: #0044cc;
+  margin-top: 15px;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
+  padding: 10px 15px;
   cursor: pointer;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease; /* NUEVA propiedad explorada */
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #002b80;
+  background-color: #0056b3;
 }
 
-/* Imagen */
-.imagen {
-  width: 150px;
-  filter: sepia(30%);
+
+figure {
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Pie de página */
+figure img {
+  width: 120px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+
 footer {
-  background-color: #0044cc;
+  background-color: #0056d6;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+h2 {
+  text-transform: uppercase;
+}
+
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
