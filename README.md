@@ -1,8 +1,8 @@
 # Práctica: Estándares Web  
 **Autor:** Jordy Romero  
-**Asignatura:** Programación y Plataformas Web  
-**Repositorio:** [icc-ppw-u1-mi_pagina_web](https://github.com/JordyRomeroa/icc-ppw-u1-mi_pagina_web)  
-**Página desplegada:** [GitHub Pages](https://JordyRomeroa.github.io/icc-ppw-u1-mi_pagina_web/)  
+**Asignatura:** Programación para la Web  
+**Repositorio:** icc-ppw-u1-mi_pagina_web  
+**Página desplegada:** https://JordyRomeroa.github.io/icc-ppw-u1-mi_pagina_web/  
 
 ---
 
@@ -10,9 +10,9 @@
 El proyecto incluye:
 
 - `<!DOCTYPE html>`, `<html lang="es">`, `<head>`, `<body>`  
-- Encabezado `<header>` con `<h1>` y `<h2>`  
-- Secciones `<section>` con contenido temático  
-- Tabla `<table>` con filas iniciales y fila dinámica agregada con JS  
+- `<header>` con `<h1>` y `<h2>`  
+- Varias secciones `<section>`  
+- Tabla `<table>` con tres filas y fila dinámica agregada con JavaScript  
 - Footer `<footer>` con información del autor  
 - Etiquetas nuevas: `<figure>` / `<figcaption>` y `<mark>`  
 
@@ -26,7 +26,7 @@ icc-ppw-u1-mi_pagina_web/
 
 ---
 
-## Estilos CSS aplicados
+## Propiedades CSS aplicadas
 | Elemento | Propiedades obligatorias | Propiedades exploradas |
 |----------|------------------------|----------------------|
 | body | background-color, font-family, margin | — |
@@ -40,31 +40,20 @@ icc-ppw-u1-mi_pagina_web/
 
 ---
 
-## Interactividad JS
+## Funciones JavaScript
 - Agregar fila dinámica a la tabla con botón  
 - Cambiar color del título al pasar el mouse  
-- Mostrar mensaje de bienvenida al cargar la página  
+- Mensaje de bienvenida al cargar la página  
 
 ---
 
-## Etiquetas nuevas exploradas
+## Etiquetas nuevas
 - `<figure>` / `<figcaption>` → Imagen con descripción  
 - `<mark>` → Resalta texto importante  
 
 ---
 
-## Capturas de pantalla sugeridas
-1. **Versión HTML básica:** sin estilos ni JS aplicados  
-2. **Versión con CSS:** resaltar colores, botones, tabla y barra de progreso  
-3. **Versión con JS:** agregar fila dinámica y efecto de hover en título  
-
-> Para tomar la captura con JS, abre la página en tu navegador y prueba:  
-> - Pasar el mouse sobre el título (`h1`)  
-> - Presionar el botón "Agregar fila" en la tabla  
-
----
-
-**Diferenciación de tu proyecto:**  
-- Color del botón (`#28a745`)  
-- Hover con `scale` en botones y secciones  
-- Mensaje de bienvenida personalizado  
+## Capturas de pantalla
+1. Página HTML básica (sin estilos ni JS)  
+2. Página con CSS aplicado  
+3. Página con interactividad JS (hover en título y fila agregada)
