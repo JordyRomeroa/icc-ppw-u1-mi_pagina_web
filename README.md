@@ -3,7 +3,7 @@
 **Asignatura:** Programación para la Web  
 **Repositorio:** icc-ppw-u1-mi_pagina_web  
 **Página desplegada:** [https://JordyRomeroa.github.io/icc-ppw-u1-mi_pagina_web/](https://JordyRomeroa.github.io/icc-ppw-u1-mi_pagina_web/)  
-
+**Repositorio:** https://github.com/JordyRomeroa/icc-ppw-u1-mi_pagina_web.git
 ---
 
 ## Estructura del proyecto
